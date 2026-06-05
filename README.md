@@ -47,7 +47,7 @@ Hook up the motor shield to the battery like below
 
 ![Motor_Image](images/motor.png)
 
----
+
 
 # Firmware
 
