@@ -8,13 +8,9 @@
 
 Using telegram botfather to create a bot and connecting the servo to wifi and the bot to allow for code to be sent through. 
 
----
-
 # Objectives
 
 - Be able send a /move LOW_NUM HIGH_NUM commands to allow the motor to spin forwards and backwards with a configurable speed.
-
----
 
 # Supplies
 
@@ -29,13 +25,9 @@ Using telegram botfather to create a bot and connecting the servo to wifi and th
 3. **Telegram**
 4. Arduino OS
 
----
-
 # Intro Concept / Theory
 
 We are using a concept from CSE 124 which is HTTPS, Hypertext Transfer Protocol Secure. HTTPS is a secure encrypted version of HTTP. HTTP is a state-less request-response model, that allows you to send requests to a server to request for data. It's less secure since it transmits data in clear, unencrypted text which allows everyone to be able to access the data. HTTPS goes through 3 different types of protection to secure data, encryption, authentification, and data integrity.
-
----
 
 # Hardware Setup
 
@@ -46,8 +38,6 @@ You need to have your ESP32S3 Dev Board and connect the motor shield on like bel
 Hook up the motor shield to the battery like below
 
 ![Motor_Image](images/motor.png)
-
-
 
 # Firmware
 
@@ -62,8 +52,6 @@ Hook up the motor shield to the battery like below
 ![Project Image Placeholder](images/familyesp32.png)
 
 Now you have set the ESP32 up !
-
----
 
 # Software
 
@@ -90,8 +78,6 @@ void setup() {
 ```
 Your motor should now be spinning!
 
---- 
-
 # Bot Creation
 
 **Now It's time to create the bot**
@@ -114,7 +100,6 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 You can communicate in 2 different ways. You can do use [any type of `chat_id`](#any-chat_id) or a [specific `chat_id`](#specific-chat_id).
 
----
 #Setting up wifi
 Each wifi network typically has a `SSID` and a `password`. 
 
@@ -168,7 +153,6 @@ void loop(){
 }
 ```
 
----
 #Software
 
 1. If you want to use any chat_id go to step 6 otherwise continue to step 2
@@ -508,12 +492,10 @@ void handleNewMessages(int numNewMessages) {
 }
 ```
 
----
 #Testing
 Now if you send the telegram text `/move 100 0` it should look like below
 <video controls src="images/CarTelegramDemo.mp4"></video>
 
----
 # Final Project Connection
 
 For the final project we use telegram to send messages our esp32 to spin a motor to open/close the door. We also use it to send gps messages when locking the car. 
@@ -523,14 +505,12 @@ For the final project we use telegram to send messages our esp32 to spin a motor
 The photo below shows the gps signal being sent to our user.
 
 ![GPS_signal](images/final.png)
----
 
 # Additional Resources
 
 
 - [Mini-Project #2 Spinning and Blinking Tutorial](https://docs.google.com/document/d/1N70qcqzzO3L6botFmQ0oDeWFepuP18lddAu0HNBlQt4/edit?tab=t.0)
 - [Sharing ESP32S3-CAM Pictures on Telegram](https://www.instructables.com/Sharing-ESP32S3-CAM-Pictures-on-Telegram/)
----
 
 # AI-Use Disclosure
 
