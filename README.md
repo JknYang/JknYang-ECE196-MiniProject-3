@@ -46,6 +46,7 @@ You need to have your ESP32S3 Dev Board and connect the motor shield on like bel
 Hook up the motor shield to the battery like below
 
 ![Motor_Image](images/motor.png)
+
 ---
 
 # Firmware
